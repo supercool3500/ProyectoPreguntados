@@ -7,16 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="wheel" id="wheel">
-            <div class="section" style="background-color: red;">&#x1F451;</div>
-            <div class="section" style="background-color: orange;">&#x1F30E;</div>
-            <div class="section" style="background-color: yellow;">&#x1F58C;</div>
-            <div class="section" style="background-color: green;">&#x1F3C8;</div>
-            <div class="section" style="background-color: blue;">&#x1F3A8;</div>
-            <div class="section" style="background-color: pink;">&#x1F3C1;</div>
+    <div id="header">
+        <img id="title-img" src="images/PregunTICA-title.png" alt="PregunTICA-title">
+    </div>
+    <div id="content">
+        <div class="initial-content">
+            <p>¡Bienvenidos a PregunTICA! <br> Haga click en "Jugar" para comenzar la partida</p>
+            <button class="play-button">Jugar</button>
         </div>
-        <button id="spinButton">Spin</button>
+        <div class="roulette-container">
+            <div class="wheel" id="wheel">
+                <div class="section" style="background-color: red;">&#x1F451;</div>
+                <div class="section" style="background-color: orange;">&#x1F30E;</div>
+                <div class="section" style="background-color: yellow;">&#x1F58C;</div>
+                <div class="section" style="background-color: green;">&#x1F3C8;</div>
+                <div class="section" style="background-color: blue;">&#x1F3A8;</div>
+                <div class="section" style="background-color: pink;">&#x1F3C1;</div>
+            </div>
+            <button id="spinButton">Spin</button>
+        </div>
+    </div>
+    <div id="foot-credits">
+        <hr class="linea-negra">
+        <p style="margin-top: 26px;">Isabel La Católica 735 | Río Cuarto | Córdoba | Argentina</p>
+        <img src="images/credit.png" alt="credit" srcset="">
+        <p>Promo 2024</p> <br>
+        <p>©2024 | Comunidad Educativa ATICA | All rights reserved.</p>
     </div>
     <script src="index.js"></script>
 </body>

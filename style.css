@@ -1,14 +1,82 @@
 body {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #dcb2fb, #7f42b4);
 }
 
-.container {
+
+#header, #content, #foot-credits {
+    flex: 1;
+}
+
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+#title-img {
+    height: auto;
+    width: 80%;
+    margin: 30px;
+}
+
+
+#foot-credits {
+    width: 100%;
+    padding: 26px;
     text-align: center;
+    color: #FFFCFA;
+    background-color: #393939;
+}
+
+#foot-credits img {
+    align-self: center;
+    margin-bottom: -1vw;
+    height: auto;
+    width: 20vw;
+}
+
+.linea-negra {
+    height: 2px;
+    background-color: #000;
+    margin: 10px 0;
+    border: none;
+}
+
+.roulette-container {
+    text-align: center;
+    opacity: 0;
+}
+
+.initial-content {
+    align-items: center;
+    text-align: center;
+}
+
+.initial-content p {
+    font-size: 30px;
+}
+
+.play-button {
+    border: 3px solid rgb(102, 0, 117);
+    border-radius: 10px;
+    width: 50vw;
+    height: 5vw;
+    background-color: rgb(102, 0, 117);
+    color: white;
+    font-size: 40px;
+    transition: background-color 0.3s ease-out;
+}
+
+.play-button:hover {
+    border: 3px solid rgb(102, 0, 117);
+    background-color: white;
+    color: rgb(102, 0, 117);
+    transition: background-color 0.3s ease-out;
 }
 
 .wheel {
