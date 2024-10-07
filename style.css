@@ -4,7 +4,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     flex-direction: column;
-    background: linear-gradient(to bottom right, #dcb2fb, #7f42b4);
+    background-image: url(images/background-img.png);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: #e7ddff;
 }
 
 
@@ -53,23 +57,55 @@ body {
 }
 
 .initial-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
 
 .initial-content p {
     font-size: 30px;
+    color: #000;
+    text-shadow: -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,
+   -1px  1px 0 #FFF,
+    1px  1px 0 #FFF;
+}
+
+.play {
+    display: flex;
+    flex-direction: row;
+}
+
+.rules-href {
+    border: 3px solid rgb(102, 0, 117);
+    background-color: #FFF;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-out;
+    color: rgb(102, 0, 117);
+    width: 20%;
+}
+
+.rules-href:hover {
+    background-color: rgb(102, 0, 117);
+    color: #FFF;
 }
 
 .play-button {
+    margin-right: 25px;
     border: 3px solid rgb(102, 0, 117);
     border-radius: 10px;
     width: 50vw;
-    height: 5vw;
     background-color: rgb(102, 0, 117);
     color: white;
-    font-size: 40px;
+    font-size: 3vw;
     transition: background-color 0.3s ease-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .play-button:hover {
@@ -77,6 +113,48 @@ body {
     background-color: white;
     color: rgb(102, 0, 117);
     transition: background-color 0.3s ease-out;
+}
+
+.table-container {
+    margin-top: 20px;
+    text-shadow: -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,
+   -1px  1px 0 #FFF,
+    1px  1px 0 #FFF;
+}
+
+.ranking-table {
+    border: 3px solid #000;
+    background-color: #FFF;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.ranking-table th, .ranking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.ranking-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ranking-table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.ranking-table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.ranking-table td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.ranking-table td:last-child {
+    border-bottom-right-radius: 10px;
 }
 
 .wheel {

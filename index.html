@@ -13,7 +13,43 @@
     <div id="content">
         <div class="initial-content">
             <p>¡Bienvenidos a PregunTICA! <br> Haga click en "Jugar" para comenzar la partida</p>
-            <button class="play-button">Jugar</button>
+            <div class="play">
+                <button class="play-button">Jugar</button>
+                <button class="rules-href" onclick="window.location.href='reglamento.html';">¿Cómo se juega?</button>
+            </div>
+            <div class="table-container">
+                <h2>👑Ranking👑</h2>
+                <table class="ranking-table">
+                    <thead>
+                        <tr>
+                            <th>Jugador</th>
+                            <th>Categorías Jugadas</th>
+                            <th>Respuestas Correctas</th>
+                            <th>Puntuación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>5</td>
+                            <td>20</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>María López</td>
+                            <td>4</td>
+                            <td>18</td>
+                            <td>1400</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos García</td>
+                            <td>6</td>
+                            <td>22</td>
+                            <td>1600</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="roulette-container">
             <div class="wheel" id="wheel">
