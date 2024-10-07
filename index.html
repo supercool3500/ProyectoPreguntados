@@ -11,10 +11,10 @@
         <img id="title-img" src="images/PregunTICA-title.png" alt="PregunTICA-title">
     </div>
     <div id="content">
-        <div class="initial-content">
+        <div class="initial-content" id="initial-content">
             <p>¡Bienvenidos a PregunTICA! <br> Haga click en "Jugar" para comenzar la partida</p>
             <div class="play">
-                <button class="play-button">Jugar</button>
+                <button class="play-button" id="play-button">Jugar</button>
                 <button class="rules-href" onclick="window.location.href='reglamento.html';">¿Cómo se juega?</button>
             </div>
             <div class="table-container">
@@ -51,14 +51,14 @@
                 </table>
             </div>
         </div>
-        <div class="roulette-container">
+        <div class="roulette-container hidden" id="roulette-container">
             <div class="wheel" id="wheel">
-                <div class="section" style="background-color: red;">&#x1F451;</div>
-                <div class="section" style="background-color: orange;">&#x1F30E;</div>
-                <div class="section" style="background-color: yellow;">&#x1F58C;</div>
-                <div class="section" style="background-color: green;">&#x1F3C8;</div>
-                <div class="section" style="background-color: blue;">&#x1F3A8;</div>
-                <div class="section" style="background-color: pink;">&#x1F3C1;</div>
+                <div class="section" style="background-color: red;">👑</div>
+                <div class="section" style="background-color: orange;">🌎</div>
+                <div class="section" style="background-color: yellow;">🖌</div>
+                <div class="section" style="background-color: green;">🏈</div>
+                <div class="section" style="background-color: blue;">🎨</div>
+                <div class="section" style="background-color: pink;">🏁</div>
             </div>
             <button id="spinButton">Spin</button>
         </div>

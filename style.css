@@ -9,8 +9,8 @@ body {
     background-repeat: repeat;
     background-position: center;
     background-color: #e7ddff;
+    caret-color: transparent;
 }
-
 
 #header, #content, #foot-credits {
     flex: 1;
@@ -44,6 +44,10 @@ body {
     width: 20vw;
 }
 
+.hidden {
+    display: none;
+}
+
 .linea-negra {
     height: 2px;
     background-color: #000;
@@ -53,7 +57,7 @@ body {
 
 .roulette-container {
     text-align: center;
-    opacity: 0;
+    margin-bottom: 20px;
 }
 
 .initial-content {
@@ -61,7 +65,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 
 .initial-content p {
@@ -76,6 +79,7 @@ body {
 .play {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .rules-href {
@@ -85,6 +89,11 @@ body {
     transition: background-color 0.3s ease-out;
     color: rgb(102, 0, 117);
     width: 20%;
+    font-size: 3vmin;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rules-href:hover {
@@ -99,7 +108,7 @@ body {
     width: 50vw;
     background-color: rgb(102, 0, 117);
     color: white;
-    font-size: 3vw;
+    font-size: 6vmin;
     transition: background-color 0.3s ease-out;
     text-align: center;
     display: flex;
@@ -109,7 +118,6 @@ body {
 }
 
 .play-button:hover {
-    border: 3px solid rgb(102, 0, 117);
     background-color: white;
     color: rgb(102, 0, 117);
     transition: background-color 0.3s ease-out;
@@ -129,6 +137,8 @@ body {
     border-radius: 10px;
     border-collapse: separate;
     border-spacing: 0;
+    width: 50vw;
+    font-size: 3vmin;
 }
 
 .ranking-table th, .ranking-table td {
